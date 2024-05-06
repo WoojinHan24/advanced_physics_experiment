@@ -1,0 +1,2 @@
+Oscilloscope USB0::0x1AB1::0x044C::DHO9S254703475::INSTR
+Signal_analyzer GPIB0::10::INSTR
