@@ -1,0 +1,26 @@
+photon counter used command in .vi
+
+SI - secondary status byte
+CS - Start signal
+CH - Stop signal
+CR - reset the counter
+QA - read A
+QB - read B
+CL - Resets the units to default
+DL 0.3 - discriminator level
+DT 0 - sets dwell time
+NE - sets the scan end mode 
+GM - gate mode
+NP 1 - number of period
+CI - counter inputs
+AS - The AS command reads and sets the front panel D/A output source. If j is absent, the D/A source is returned. The parameter j may only be included if the counting mode is A,B FOR T PRESET. In this case, j=0 or 1 selects A or B. In all other modes, the D/A output follows the count display. The source may be read in all modes. 
+CM - counting modes
+DS rise - The DS command sets and reads the discriminator slopes. i = 0,1, or 2 designates discriminator A,B, or T and is required. If j is included, the selected discriminator slope is set to RISE, j=0, or FALL, j=1. If j is absent, the slope of discriminator i is returned. 
+CP - counter preset
+
+
+python position (grab this to the lab computer)
+C:\\Users\\hwjin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\numpy
+
+pulse blaster programming manual
+https://www.spincore.com/support/SpinAPI_Python_Wrapper/spinapi.py

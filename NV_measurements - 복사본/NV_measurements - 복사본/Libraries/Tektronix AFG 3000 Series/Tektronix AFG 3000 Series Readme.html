@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Tektronix AFG 3000 Series Instrument Driver Readme</title>
+</head>
+<body>
+<pre>
+<font face = "Times New Roman", size = 3>
+<h2>Tektronix AFG 3000 Series Instrument Driver Readme</h2>
+To rate this driver, go to the Tektronix AFG 3000 Series driver download page on the <a href = http://www.ni.com/idnet>Instrument Driver Network</a>.
+
+<h4>1. Overview</h4>
+Instrument Driver Technology:  Plug and Play (Project Style)
+Supported Language(s):  LabVIEW
+
+Supported Model(s):  AFG3011, AFG3021, AFG3021B, AFG3022, AFG3022B, AFG3101, AFG3102, AFG3251, AFG3252, AFG2021,
+					 AFG3011C, AFG3021C, AFG3022C, AFG3051C, AFG3052C, AFG3101C, AFG3102C, AFG3251C, AFG3252C, AFG3152C, AFG3151C
+Model(s) Tested:  AFG3252, AFG3022B, AFG3011, AFG2021, AFG3101, AFG3011C, AFG3021C, AFG3022C, AFG3051C, AFG3052C, AFG3101C, AFG3102C, AFG3251C, AFG3252C
+				  AFG3151C, AFG3152C 	
+Interface(s):  GPIB, Ethernet, USB
+Firmware Revision Tested:  AFG3252(1.0.4, 3.0.0, 3.2.3), AFG2021(1.0.4beta), AFG3252C(0288beta, 1.0.4, 1.0.5), AFG3101(3.2.3),
+						   AFG3011C(1.0.4, 1.0.5), AFG3021C(1.0.4, 1.0.5), AFG3022C(1.0.4, 1.0.5), AFG3051C(1.0.4, 1.0.5), AFG3052C(1.0.4, 1.0.5),
+						   AFG3101C(1.0.4, 1.0.5), AFG3102C(1.0.4, 1.0.5), AFG3251C(1.0.4, 1.0.5)
+Certified:  Yes
+NI Supported:  Yes
+Source Code Available:  Yes
+
+Driver Revision:  2.4
+Original Release Date:  11/21/2006
+Current Revision Date:  05/2019
+
+<h4>2. Required Software</h4>
+Some software components need to be installed before using this instrument driver. The minimum versions of these components are listed below, and can be downloaded from the Download Site.
+
+VISA 5.0 or later
+
+Refer to the <i>LabVIEW Help</i> for more information about software requirements. You access the <i>LabVIEW Help</i> by selecting <i>Help»LabVIEW Help</i>.
+
+<h4>3. Known Issues</h4>
+To report issues or provide feedback about this instrument driver,  <a href="http://www.ni.com/en-us/support.html">please contact technical support</a>.
+
+<!-- Add known issues here as necessary. -->
+When creating or using non-API VIs, Error Query can return a time out error for commands that are not terminated with ASCII character '\n' (0x0A).<br> This issue only exists on USB and GPIB interfaces for models<br> AFG2021, AFG3011C, AFG3021C, AFG3022C, AFG3051C, AFG3052C, AFG3101C, AFG3102C, AFG3251C, AFG3252C and has been seen with command "outp1:trig:mode trig".
+
+The way to resolve the issue for customized commands is to add '\n' (0x0A) as a terminator of those commands.
+
+<h4>4. Revision History</h4>
+The latest version of this and other LabVIEW and LabWindows/CVI instrument drivers can be downloaded at the <a href = http://www.ni.com/idnet>Instrument Driver Network</a>.
+
+REV 1.0,  11/21/2006
+Original Release.
+
+REV 1.1,  03/10/2007
+Added: Waveform Burst Example.vi
+Modified: Configure Trigger.vi added spaces to Trigger Source Pick Line function and modified documentation to fully support trigger interval.
+
+REV 1.2,  10/05/2007
+Added support for two new models AFG3021B and AFG3022B 
+
+REV 1.3, 04/29/2008
+Added support new model AFG3011
+Formulas for Leading and Trailing Edge Time maximum values are revised.
+
+REV 1.3.1, 10/13/2008
+Modified: Configure Trigger.vi added missing colon to command TRIG:SLOP %s 
+Modified: Configure Burst.vi corrected index for Burst Mode.
+
+REV 2.0, 07/14/2009
+Modified by: Alvin Tang, Austin, Texas.
+- Original Release for project-style driver created based on version 1.3.1 of Plug and Play Driver.
+
+REV 2.0.1, 08/24/2009
+Corrected the representation for the Scaled Waveform Data indicator in the Scale private VI.
+
+REV 2.0.2, 03/14/2011
+Modified by: Ayo Olubeko, Austin, Texas.
+Removed ":HEADER OFF;" string in Default Instrument Setup VI
+
+REV 2.0.3, 01/20/2012
+Updated Configure Standard Waveform to include Phase Level and Phase Unit controls.
+
+REV 2.0.4, 09/28/2012
+Modified by: Xueting Tan, Shanghai, China.
+Added support for new model: AFG2021
+Modified: Configure Pulse Waveform.vi updated the default values for Trailing Edge Time and Leading Edge Time controls to support new model.
+
+REV 2.1, 12/07/2012
+Modified by: Haoran Feng, Shanghai, China.
+Added support for new model: AFG3011C, AFG3021C, AFG3022C, AFG3051C, AFG3052C, AFG3101C, AFG3102C, AFG3251C, AFG3252C
+Added a VI: Save Load Instrument Settings.vi
+Modified: 
+	Configure Burst.vi: 
+		- Add a Burst Delay parameter.
+	Configure Output Impedance.vi: 
+		- Add a "Customized" item for Impedance parameter.
+		- Add a parameter Customized Impedance to specified the impedance value.
+	Configure Pulse Waveform.vi:
+		- Update the description for parameters.
+
+REV 2.2, 03/12/2013
+Modified by: Chenchen Zhou, Shanghai, China.
+Added new VIs: 
+	Configure Arbitrary Waveform Phase.vi
+	Configure Waveform Length.vi
+	Configure Waveform Points.vi
+	Setup Memory.vi
+	Save Load Mass Storage Waveform.vi
+	Query Waveform Length.vi
+	Query Waveform Points.vi
+Modified: 
+	Configure Modulation (Amplitude).vi
+	Configure Modulation (Frequency).vi
+	Configure Modulation (Phase).vi
+	Configure Modulation (Pulse Width).vi
+	Configure Arbitrary Waveform.vi
+		- Add edit memory support options to the Modulation Waveform Text Ring control.
+		
+REV 2.3	09/13/2013
+Modified by: Zhen Wang, Shanghai, China.
+Modified:
+	Configure Arbitrary Waveform.vi
+		- Remove "Edit Memory 1" and "Edit Memory 2" items from Arbitrary Waveform Name parameter.
+		- Add "Edit Memory" item for Arbitrary Waveform Name parameter to maintain forward compatibility.
+	Configure Modulation (Amplitude).vi
+	Configure Modulation (Frequency).vi
+	Configure Modulation (Phase).vi
+	Configure Modulation (Pulse Width).vi
+		- Remove "Edit Memory 1" and "Edit Memory 2" items from Modulation Waveform parameter.
+		- Add "Edit Memory" item for Edit Modulation Waveform parameter to maintain forward compatibility.
+		- Readjust functions in block diagram to fix the following issue: It failed to change AM Source, FM Source, PM Source, PWM Source and FSK Source from External to Internal.
+	Configure Sweep Mode.vi
+		- Remove "Select" function from block diagram to fix the following issue: It failed to modify Return Time and Hold Time in the trigger sweep mode.
+	Configure Waveform Length.vi
+	Configure Waveform Points.vi
+	Query Waveform Length.vi
+	Query Waveform Points.vi
+	Save Load Mass Storage Waveform.vi
+		- Add "Edit Memory" item for Memory Name parameter to maintain forward compatibility.
+	Create Arbitrary Waveform.vi
+		- Add Edit Memory Text Ring control for edit memory selection.
+	Setup Memory.vi
+		- Add "Edit Memory" item for Source Memory parameter and Target Memory parameter.
+	Configure Sweep Mode.vi
+	    - Replace "Default Value: 0.01(s)" with "Default Value: 1(s)" in description of Return Time. 
+
+REV 2.4 05/2019
+Modified by: Hanxi Fu, Shanghai, China
+Added support for new models: AFG3151C (Tested by NI), AFG3152C (Tested by Cirrus)
+Modified:
+	Configure Arbitrary Waveform.vi
+		- Add "Edit Path" item for Arbitrary Waveform Name parameter.
+		- Add File Path parameter.
+	Configure Modulation (Amplitude).vi
+		- Add "Edit Path" item for Modulation Waveform parameter.
+		- Add File Path parameter.
+	Configure Modulation (Frequency).vi
+		- Add "Edit Path" item for Modulation Waveform parameter.
+		- Add File Path parameter.
+	Configure Modulation (Phase).vi
+		- Add "Edit Path" item for Modulation Waveform parameter.
+		- Add File Path parameter.
+	Configure Modulation (Pulse Width).vi
+		- Add "Edit Path" item for Modulation Waveform parameter.
+		- Add File Path parameter.
+</font>
+</pre>
+</body>
+</html>
