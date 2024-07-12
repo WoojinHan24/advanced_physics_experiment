@@ -1,0 +1,50 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Marcus V.~Doherty%
+}{%
+Marcus V.~Doherty%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+nv}
+\APACinsertmetastar {%
+nv}%
+\begin{APACrefauthors}%
+Marcus V.~Doherty, e\BPBI a.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\APACrefbtitle {The nitrogen-vacancy colour centre in diamond} {The
+  nitrogen-vacancy colour centre in diamond}\ (\BVOL~528)\ (\BNUM~1).
+\newblock
+\begin{APACrefURL} \url{arXiv:1302.3288v1} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M.~L.~Goldman%
+}{%
+M.~L.~Goldman%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+nvphonon}
+\APACinsertmetastar {%
+nvphonon}%
+\begin{APACrefauthors}%
+M.~L.~Goldman, e\BPBI a.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {Phonon-induced population dynamics and intersystem crossing in
+  nitrogen-vacancy centers} {Phonon-induced population dynamics and intersystem
+  crossing in nitrogen-vacancy centers}\ (\BVOL~114)\ (\BNUM~14).
+\newblock
+\begin{APACrefURL} \url{DOI:10.1103/PhysRevLett.114.145502} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
