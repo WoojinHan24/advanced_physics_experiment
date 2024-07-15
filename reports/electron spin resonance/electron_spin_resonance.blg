@@ -1,56 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: electron_spin_resonance.aux
-The style file: apacite.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+The style file: plain.bst
 Database file #1: esr_ref.bib
-apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 2 entries,
-            6951 wiz_defined-function locations,
-            1283 strings with 10968 characters,
-and the built_in function-call counts, 3596 in all, are:
-= -- 437
-> -- 29
-< -- 170
-+ -- 169
-- -- 4
-* -- 228
-:= -- 704
-add.period$ -- 8
-call.type$ -- 2
-change.case$ -- 34
+You've used 9 entries,
+            2118 wiz_defined-function locations,
+            554 strings with 5651 characters,
+and the built_in function-call counts, 2879 in all, are:
+= -- 267
+> -- 183
+< -- 0
++ -- 74
+- -- 64
+* -- 210
+:= -- 514
+add.period$ -- 29
+call.type$ -- 9
+change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 82
-empty$ -- 145
-format.name$ -- 28
-if$ -- 690
+cite$ -- 9
+duplicate$ -- 83
+empty$ -- 198
+format.name$ -- 64
+if$ -- 569
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 0
-newline$ -- 47
-num.names$ -- 16
-pop$ -- 122
+int.to.str$ -- 9
+missing$ -- 3
+newline$ -- 50
+num.names$ -- 18
+pop$ -- 59
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 50
 quote$ -- 0
-skip$ -- 162
+skip$ -- 58
 stack$ -- 0
-substring$ -- 198
-swap$ -- 60
-text.length$ -- 17
+substring$ -- 119
+swap$ -- 13
+text.length$ -- 0
 text.prefix$ -- 0
-top$ -- 1
-type$ -- 160
+top$ -- 0
+type$ -- 36
 warning$ -- 0
-while$ -- 14
-width$ -- 0
-write$ -- 50
+while$ -- 22
+width$ -- 10
+write$ -- 103

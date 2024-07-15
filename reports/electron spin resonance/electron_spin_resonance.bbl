@@ -1,50 +1,60 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 
-\bibitem [\protect \citeauthoryear {%
-Marcus V.~Doherty%
-}{%
-Marcus V.~Doherty%
-}{%
-{\protect \APACyear {2013}}%
-}]{%
-nv}
-\APACinsertmetastar {%
-nv}%
-\begin{APACrefauthors}%
-Marcus V.~Doherty, e\BPBI a.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2013}{}{}.
-\newblock
-\APACrefbtitle {The nitrogen-vacancy colour centre in diamond} {The
-  nitrogen-vacancy colour centre in diamond}\ (\BVOL~528)\ (\BNUM~1).
-\newblock
-\begin{APACrefURL} \url{arXiv:1302.3288v1} \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
+\bibitem{lowtemp}
+David~A. Broadway, Jean-Philippe Tetienne, Joel~D. Wood, Alastair Stacey,
+  Liam~T. Hall, David~A. Simpson, and Lloyd~CL Hollenberg.
+\newblock Anticrossing spin dynamics of diamond nitrogen-vacancy centers at
+  zero magnetic field.
+\newblock {\em Physical Review B}, 94(19):195207, 2016.
 
-\bibitem [\protect \citeauthoryear {%
-M.~L.~Goldman%
-}{%
-M.~L.~Goldman%
-}{%
-{\protect \APACyear {2015}}%
-}]{%
-nvphonon}
-\APACinsertmetastar {%
-nvphonon}%
-\begin{APACrefauthors}%
-M.~L.~Goldman, e\BPBI a.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2015}{}{}.
-\newblock
-\APACrefbtitle {Phonon-induced population dynamics and intersystem crossing in
-  nitrogen-vacancy centers} {Phonon-induced population dynamics and intersystem
-  crossing in nitrogen-vacancy centers}\ (\BVOL~114)\ (\BNUM~14).
-\newblock
-\begin{APACrefURL} \url{DOI:10.1103/PhysRevLett.114.145502} \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
+\bibitem{signalgenerator}
+Anritsu Corporation.
+\newblock {\em MG3700A Vector Signal Generator}.
+\newblock Anritsu Corporation, 490 Jarvis Drive, Morgan Hill, CA 95037, USA,
+  2024.
+\newblock Product information and specifications.
+
+\bibitem{nv}
+Marcus~W. Doherty, Neil~B. Manson, Paul Delaney, Fedor Jelezko, Jörg
+  Wrachtrup, and Lloyd~C.L. Hollenberg.
+\newblock The nitrogen-vacancy colour centre in diamond, 2013.
+
+\bibitem{nvphonon}
+M.~L. Goldman, A.~Sipahigil, M.~W. Doherty, N.~Y. Yao, S.~D. Bennett,
+  M.~Markham, D.~J. Twitchen, N.~B. Manson, A.~Kubanek, and M.~D. Lukin.
+\newblock Phonon-induced population dynamics and intersystem crossing in
+  nitrogen-vacancy centers, 2015.
+
+\bibitem{sixelectron}
+A.~Lenef and S.~C. Rand.
+\newblock Electronic structure of the n-v center in diamond: Theory.
+\newblock {\em Phys. Rev. B}, 53:13441--13455, May 1996.
+
+\bibitem{preference}
+N.~B. Manson, J.~P. Harrison, and M.~J. Sellars.
+\newblock Nitrogen-vacancy center in diamond: Model of the electronic structure
+  and associated dynamics.
+\newblock {\em Phys. Rev. B}, 74:104303, Sep 2006.
+
+\bibitem{photoncounter}
+Stanford~Research Systems.
+\newblock {\em SR400 Dual-Channel Gated Photon Counter Manual}.
+\newblock Stanford Research Systems, 1290-D Reamwood Avenue, Sunnyvale, CA
+  94089, 2021.
+\newblock Version 1.3.
+
+\bibitem{pulseblaster}
+SpinCore Technologies.
+\newblock {\em PulseBlaster Programmable Pulse Generator}.
+\newblock SpinCore Technologies, 4631 NW 53rd Avenue, Suite 103, Gainesville,
+  FL 32653, USA, 2024.
+\newblock Product information and specifications.
+
+\bibitem{functiongenerator}
+Tektronix.
+\newblock {\em AFG3000C Arbitrary/Function Generator}.
+\newblock Tektronix, 14150 SW Karl Braun Drive, P.O. Box 500, Beaverton, OR
+  97077, USA, 2024.
+\newblock Product information and specifications.
 
 \end{thebibliography}
